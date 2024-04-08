@@ -10,9 +10,7 @@ const Analytics = () => {
         <h1 className="text-5xl font-bold leading-loose">
           Built-In Analytics to Track Your NFTs
         </h1>
-        <p>
-          Use our built-in analytics dashboard to pull valuable
-        </p>
+        <p>Use our built-in analytics dashboard to pull valuable</p>
         <p>insights and monitor the value of your krypto</p>
         <p className="mb-20">portfolio over time.</p>
         <Button label="VIEW OUR PRICING" />

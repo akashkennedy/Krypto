@@ -22,7 +22,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <p  className="font-medium mb-5">Market</p>
+        <p className="font-medium mb-5">Market</p>
         <ul>
           <li>
             <a href="#">Browse NFTs</a>
@@ -55,7 +55,11 @@ const Footer = () => {
       <div>
         <h6 className="font-medium mb-5">Join Our Newsletter</h6>
         <div>
-          <input type="text" placeholder="Email Address" className="w-60 h-10 bg-[#010922] p-5 rounded-full mb-28"/>
+          <input
+            type="text"
+            placeholder="Email Address"
+            className="w-60 h-10 bg-[#010922] p-5 rounded-full mb-28"
+          />
         </div>
         <Button label="Submit" />
       </div>
