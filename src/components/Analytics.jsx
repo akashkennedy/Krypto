@@ -6,7 +6,7 @@ const Analytics = () => {
     <section className="flex items-center justify-between mx-24 gap-20">
       <img src={analytics} alt="Analytics" />
       <div className="flex flex-col justify-between gap-y-5">
-        <h6 className="text-[#a6dbda] text-xl font-medium">Analytics</h6>
+        <h6 className="text-subhead text-xl font-medium">Analytics</h6>
         <h1 className="text-5xl font-bold leading-loose">
           Built-In Analytics to Track Your NFTs
         </h1>
