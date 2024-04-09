@@ -4,7 +4,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <section>
-      <div className="mt-10  flex justify-between items-center mx-24">
+      <div className="mt-10  flex justify-between items-center">
         <div className="w-1/4">
           <h1 className="text-5xl font-bold leading-loose">
             Discover and Collect rare NFTs

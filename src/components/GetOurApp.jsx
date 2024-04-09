@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const GetOurApp = () => {
   return (
-    <section className="flex justify-between items-center mx-24 gap-20">
+    <section className="flex justify-between items-center gap-20">
       <div className="flex flex-col justify-between items-start gap-20">
         <h6 className="text-[#a6dbda] text-xl font-medium">Get Our App</h6>
         <h1 className="text-5xl font-bold leading-loose">

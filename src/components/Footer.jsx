@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between mx-24 py-10">
+    <footer className="flex justify-between py-10">
       <h1 className="font-bold">Krypto</h1>
       <div>
         <p className="font-medium mb-5">Krypto</p>

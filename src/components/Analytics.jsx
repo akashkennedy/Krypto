@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const Analytics = () => {
   return (
-    <section className="flex items-center justify-between mx-24 gap-20">
+    <section className="flex items-center justify-between gap-20">
       <img src={analytics} alt="Analytics" />
       <div className="flex flex-col justify-between gap-y-5">
         <h6 className="text-subhead text-xl font-medium">Analytics</h6>
