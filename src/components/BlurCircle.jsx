@@ -1,9 +1,9 @@
-const BlurCircle = () => {
+const BlurCircle = ({ className }) => {
   return (
-    <div className="h-48 w-48 bg-[#a6dbda] blur-[100px] absolute left-80">
+    <div className={`h-48 w-48 blur-[100px] ${className}`}>
 
     </div>
   )
 }
 
-export default BlurCircle
+export default BlurCircle 

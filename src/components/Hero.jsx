@@ -1,5 +1,6 @@
 import hero from "../assets/hero.png";
 import Button from "./Button";
+import BlurCircle from './BlurCircle'
 
 const Hero = () => {
   return (
@@ -18,6 +19,7 @@ const Hero = () => {
         </div>
       </div>
       <img src={hero} alt="Hero" height={500} width={500} />
+      <BlurCircle className="absolute right-0 bg-[#91d7d6] z-0"/>
     </section>
   );
 };
