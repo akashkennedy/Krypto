@@ -1,6 +1,6 @@
-const Button = ({ label }) => {
+const Button = ({ label, className }) => {
   return (
-    <button className="bg-button rounded-full p-3 w-32 relative bottom-20 left-20 font-semibold mr-3">
+    <button className={`bg-button rounded-full p-3 w-32 font-semibold ${className}`}>
       {label}
     </button>
   );

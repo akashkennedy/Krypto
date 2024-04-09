@@ -5,9 +5,9 @@ import logo4 from "../assets/logos/logo4.png";
 
 const FeaturedOn = () => {
   return (
-    <section className="mx-24 text-xl">
+    <section className="text-xl">
       <h2 className="font-semibold">Featured On</h2>
-      <div className="flex items-center justify-between bg-featuredbg px-10 mt-5">
+      <div className="flex items-center justify-between bg-featuredbg px-10 mt-5 rounded-md">
         <img src={logo1} alt="Fast Company" />
         <img src={logo2} alt="Tech Crunch" />
         <img src={logo3} alt="IDK" />
