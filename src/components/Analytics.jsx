@@ -7,13 +7,13 @@ const Analytics = () => {
       <img src={analytics} alt="Analytics" />
       <div className="flex flex-col justify-between gap-y-5">
         <h6 className="text-subhead text-xl font-medium">Analytics</h6>
-        <h1 className="text-5xl font-bold leading-loose">
+        <h1 className="text-5xl font-bold leading-normal">
           Built-In Analytics to Track Your NFTs
         </h1>
         <p>Use our built-in analytics dashboard to pull valuable</p>
         <p>insights and monitor the value of your krypto</p>
-        <p className="mb-20">portfolio over time.</p>
-        <Button label="VIEW OUR PRICING" />
+        <p>portfolio over time.</p>
+        <Button label="VIEW OUR PRICING" className="w-60 mt-5"/>
       </div>
     </section>
   );

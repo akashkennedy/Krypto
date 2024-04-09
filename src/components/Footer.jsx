@@ -54,14 +54,14 @@ const Footer = () => {
       </div>
       <div>
         <h6 className="font-medium mb-5">Join Our Newsletter</h6>
-        <div>
+        <div className="flex justify-between">
           <input
             type="text"
             placeholder="Email Address"
-            className="w-60 h-10 bg-[#010922] p-5 rounded-full mb-28"
+            className="w-60 h-10 bg-[#010922] p-5 rounded-full"
           />
+        <Button label="Submit" className="h-10 w-18 relative right-24"/>
         </div>
-        <Button label="Submit" />
       </div>
     </footer>
   );
