@@ -9,6 +9,9 @@ export default {
         subhead: "#a6dbda",
         featuredbg: "#35005e",
       },
+      fontFamily: {
+        body: ["Outfit", 'serif']
+      }
     },
   },
   plugins: [],
