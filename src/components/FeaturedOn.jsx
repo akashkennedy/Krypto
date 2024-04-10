@@ -7,7 +7,7 @@ const FeaturedOn = () => {
   return (
     <section className="text-xl">
       <h2 className="font-semibold">Featured On</h2>
-      <div className="flex flex-col py-5 gap-5 sm:flex items-center justify-between bg-featuredbg px-10 mt-5 rounded-md">
+      <div className="flex flex-col py-5 gap-5 sm:flex-row items-center justify-between bg-featuredbg px-10 mt-5 rounded-md">
         <img src={logo1} alt="Fast Company" />
         <img src={logo2} alt="Tech Crunch" />
         <img src={logo3} alt="IDK" />

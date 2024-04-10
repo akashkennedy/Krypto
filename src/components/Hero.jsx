@@ -1,6 +1,6 @@
 import hero from "../assets/hero.png";
 import Button from "./Button";
-import BlurCircle from './BlurCircle'
+import BlurCircle from "./BlurCircle";
 
 const Hero = () => {
   return (
@@ -18,8 +18,14 @@ const Hero = () => {
           <Button label="SELL NFTS" />
         </div>
       </div>
-      <img src={hero} alt="Hero" height={500} width={500} className="hidden sm:block"/>
-      <BlurCircle className="absolute right-0 bg-[#91d7d6] z-0"/>
+      <img
+        src={hero}
+        alt="Hero"
+        height={500}
+        width={500}
+        className="hidden sm:block"
+      />
+      <BlurCircle className="absolute right-0 bg-[#91d7d6] z-0" />
     </section>
   );
 };
