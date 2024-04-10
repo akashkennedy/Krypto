@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <main className="h-full bg-background text-white font-body px-24">
+    <main className="px-5 sm:px-24 h-full bg-background text-white font-body">
       <Header />
       <Hero />
       <FeaturedOn />

@@ -2,14 +2,14 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between py-10">
-      <h1 className="font-bold">Krypto</h1>
+    <footer className="flex flex-col sm:flex-row justify-between py-10">
+      <h1 className="font-bold text-center sm:mt-5 ">Krypto</h1>
       <div>
-        <p className="font-medium mb-5">Krypto</p>
+        <p className="mb-2  mt-5 sm:mb-5 font-medium">Krypto</p>
         <ul>
           <li>
             <a href="#">Home</a>
-          </li>
+          </li> 
           <li>
             <a href="#">About</a>
           </li>
@@ -22,7 +22,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <p className="font-medium mb-5">Market</p>
+        <p className="mb-2 mt-5 sm:mb-5 font-medium">Market</p>
         <ul>
           <li>
             <a href="#">Browse NFTs</a>
@@ -36,7 +36,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <p className="font-medium mb-5">Contact</p>
+        <p className="mb-2 mt-5 sm:mb-5 font-medium">Contact</p>
         <ul>
           <li>
             <a href="#">E-Mail</a>
@@ -53,7 +53,7 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h6 className="font-medium mb-5">Join Our Newsletter</h6>
+        <h6 className="mb-2 mt-5 sm:mb-5 font-medium">Join Our Newsletter</h6>
         <div className="flex justify-between">
           <input
             type="email"
@@ -62,7 +62,7 @@ const Footer = () => {
             placeholder="Email Address"
             className="w-66 h-10 bg-[#010922] p-5 rounded-full"
           />
-        <Button label="Submit" className="h-10 w-18 relative right-32"/>
+        <Button label="Submit" className="right-24 h-10 sm:right-32 w-18 relative"/>
         </div>
       </div>
     </footer>

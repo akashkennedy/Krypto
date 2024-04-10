@@ -1,10 +1,10 @@
 import hero from "../assets/hero.png";
 import Button from "./Button";
-import BlurCircle from './BlurCircle'
+import BlurCircle from "./BlurCircle";
 
 const Hero = () => {
   return (
-    <section className="flex items-center justify-between gap-20">
+    <section className="sm:flex items-center justify-between gap-20">
       <div className="flex flex-col justify-between gap-y-5 w-60">
         <h1 className="text-5xl font-bold leading-normal">
           Discover and Collect rare NFTs
@@ -18,8 +18,14 @@ const Hero = () => {
           <Button label="SELL NFTS" />
         </div>
       </div>
-      <img src={hero} alt="Hero" height={500} width={500} />
-      <BlurCircle className="absolute right-0 bg-[#91d7d6] z-0"/>
+      <img
+        src={hero}
+        alt="Hero"
+        height={500}
+        width={500}
+        className="hidden sm:block"
+      />
+      <BlurCircle className="absolute right-0 bg-[#91d7d6] z-0" />
     </section>
   );
 };
