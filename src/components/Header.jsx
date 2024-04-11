@@ -1,9 +1,7 @@
 import BlurCircle from "../components/BlurCircle";
 import hamburger from "../assets/hamburger.png";
-import { useState } from "react";
 
 const Header = () => {
-
   return (
     <header className="flex items-center justify-between py-8">
       <h1 className="font-bold mt-3">Krypto</h1>
