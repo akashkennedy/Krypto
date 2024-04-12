@@ -1,11 +1,13 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import FeaturedOn from "./components/FeaturedOn";
-import Analytics from "./components/Analytics";
-import GetOurApp from "./components/GetOurApp";
-import Footer from "./components/Footer";
-import HamburgerMenu from "./components/HamburgerMenu";
 import { useState } from "react";
+import {
+  Header,
+  Hero,
+  Analytics,
+  FeaturedOn,
+  GetOurApp,
+  Footer,
+  HamburgerMenu,
+} from "./components/index";
 
 const App = () => {
   const [menu, openMenu] = useState(false);
@@ -20,11 +22,15 @@ const App = () => {
     document.body.classList.remove("overflow-hidden");
   }
 
+  const toggleMenu = () => {
+    openMenu(false);
+  };
+
   return (
     <main className="px-5 sm:px-24 h-full bg-background text-white font-body">
       {menu ? <HamburgerMenu onClick={handleMenu} /> : ""}
       <Header onClick={handleMenu} />
-      <Hero />
+      <Hero onClick={toggleMenu} />
       <FeaturedOn />
       <Analytics />
       <GetOurApp />

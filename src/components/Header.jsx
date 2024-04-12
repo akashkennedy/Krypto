@@ -1,5 +1,6 @@
 import BlurCircle from "../components/BlurCircle";
 import hamburger from "../assets/hamburger.png";
+import {navLinks} from "./data";
 
 const Header = ({ onClick }) => {
   return (
@@ -8,26 +9,13 @@ const Header = ({ onClick }) => {
       <BlurCircle className="absolute left-96 bg-[#8959d8] z-0" />
       <nav className="hidden sm:block">
         <ul className="flex items-center justify-between gap-5">
-          <li className="transition-all hover:-translate-y-0.5">
-            <a href="#" className="text-lg font-medium">
-              About
-            </a>
-          </li>
-          <li className="transition-all hover:-translate-y-0.5">
-            <a href="#" className="text-lg font-medium">
-              Pricing
-            </a>
-          </li>
-          <li className="transition-all hover:-translate-y-0.5">
-            <a href="#" className="text-lg font-medium">
-              Contact
-            </a>
-          </li>
-          <li className="transition-all hover:-translate-y-0.5">
-            <a href="#" className="text-lg font-medium">
-              Buy NFTs
-            </a>
-          </li>
+          {navLinks.map((item) => (
+            <li className="transition-all hover:opacity-70" key={item.id}>
+              <a href={item.href} className="text-lg font-medium">
+                {item.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
       <img

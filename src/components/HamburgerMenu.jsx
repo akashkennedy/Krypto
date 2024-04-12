@@ -1,26 +1,19 @@
 import Close from "../assets/close.png";
+import { navLinks } from "./data";
 
 const HamburgerMenu = ({ onClick }) => {
   return (
-    <div className="absolute text-2xl w-1/2 h-screen right-0 backdrop-blur-xl sm:hidden">
+    <div className="absolute text-2xl w-1/2 h-fit right-0 backdrop-blur-2xl sm:hidden">
       <nav className="mt-10 ml-5 flex gap-5">
         <ul className="flex flex-col gap-5">
-          <li>
-            <a href="#">About</a>
-          </li>
-          <hr />
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <hr />
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <hr />
-          <li>
-            <a href="#">Buy NFTs</a>
-          </li>
-          <hr />
+          {navLinks.map((item) => (
+            <>
+              <li key={item.id}>
+                <a href={item.href}>{item.name}</a>
+              </li>
+              <hr />
+            </>
+          ))}
         </ul>
         <img
           src={Close}
