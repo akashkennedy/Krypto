@@ -7,19 +7,23 @@ import Footer from "./components/Footer";
 import HamburgerMenu from "./components/HamburgerMenu";
 import { useState } from "react";
 
-
 const App = () => {
+  const [menu, openMenu] = useState(false);
 
-const[menu, openMenu ] = useState(false)
+  const handleMenu = () => {
+    openMenu(!menu);
+  };
 
-const handleMenu = () => {
-  openMenu(!menu);
-};
+  if (menu) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
 
   return (
     <main className="px-5 sm:px-24 h-full bg-background text-white font-body">
-      {menu ? <HamburgerMenu onClick={handleMenu}/> : ''}
-      <Header onClick={handleMenu}/>
+      {menu ? <HamburgerMenu onClick={handleMenu} /> : ""}
+      <Header onClick={handleMenu} />
       <Hero />
       <FeaturedOn />
       <Analytics />
