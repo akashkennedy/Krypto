@@ -5,16 +5,21 @@ import Analytics from "./components/Analytics";
 import GetOurApp from "./components/GetOurApp";
 import Footer from "./components/Footer";
 import HamburgerMenu from "./components/HamburgerMenu";
+import { useState } from "react";
 
 
 const App = () => {
 
+const[menu, openMenu ] = useState(false)
 
+const handleMenu = () => {
+  openMenu(!menu);
+};
 
   return (
     <main className="px-5 sm:px-24 h-full bg-background text-white font-body">
-      <HamburgerMenu />
-      <Header />
+      {menu ? <HamburgerMenu onClick={handleMenu}/> : ''}
+      <Header onClick={handleMenu}/>
       <Hero />
       <FeaturedOn />
       <Analytics />

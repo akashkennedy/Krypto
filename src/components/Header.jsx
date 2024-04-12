@@ -39,5 +39,4 @@ const Header = ({ onClick }) => {
     </header>
   );
 };
-
 export default Header;
