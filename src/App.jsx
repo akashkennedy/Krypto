@@ -1,11 +1,5 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import FeaturedOn from "./components/FeaturedOn";
-import Analytics from "./components/Analytics";
-import GetOurApp from "./components/GetOurApp";
-import Footer from "./components/Footer";
-import HamburgerMenu from "./components/HamburgerMenu";
 import { useState } from "react";
+import {Header, Hero, Analytics, FeaturedOn, GetOurApp, Footer, HamburgerMenu } from "./components/index"
 
 const App = () => {
   const [menu, openMenu] = useState(false);
