@@ -1,11 +1,11 @@
 import BlurCircle from "../components/BlurCircle";
-import hamburger from "../assets/hamburger.png"
+import hamburger from "../assets/hamburger.png";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   return (
     <header className="flex items-center justify-between py-8">
       <h1 className="font-bold mt-3">Krypto</h1>
-      <BlurCircle className="absolute left-96 bg-[#8959d8] z-0"/>
+      <BlurCircle className="absolute left-96 bg-[#8959d8] z-0" />
       <nav className="hidden sm:block">
         <ul className="flex items-center justify-between gap-5">
           <li className="transition-all hover:-translate-y-0.5">
@@ -30,9 +30,13 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <img src={hamburger} alt="Hamburger Menu" className="cursor-pointer sm:hidden" />
+      <img
+        src={hamburger}
+        alt="Hamburger Menu"
+        className="cursor-pointer sm:hidden"
+        onClick={onClick}
+      />
     </header>
   );
 };
-
 export default Header;
