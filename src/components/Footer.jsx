@@ -1,4 +1,5 @@
 import Button from "./Button";
+import { footerMarket, footerKrypto, footerContact } from "./data";
 
 const Footer = () => {
   return (
@@ -7,49 +8,31 @@ const Footer = () => {
       <div>
         <p className="mb-2  mt-5 sm:mb-5 font-medium">Krypto</p>
         <ul>
-          <li>
-            <a href="#">Home</a>
-          </li> 
-          <li>
-            <a href="#">About</a>
+        {footerKrypto.map(item => (
+          <li key={item.id} className="hover:opacity-70 transition-opacity">
+            <a href={item.href}>{item.name}</a>
           </li>
-          <li>
-            <a href="#">Buy NFTs</a>
-          </li>
-          <li>
-            <a href="#">Sell Nfts</a>
-          </li>
+        ))}
         </ul>
       </div>
       <div>
         <p className="mb-2 mt-5 sm:mb-5 font-medium">Market</p>
         <ul>
-          <li>
-            <a href="#">Browse NFTs</a>
+        {footerMarket.map(item => (
+          <li key={item.id}  className="hover:opacity-70 transition-opacity">
+            <a href={item.href}>{item.name}</a>
           </li>
-          <li>
-            <a href="#">Buy NFTs</a>
-          </li>
-          <li>
-            <a href="#">Sell Nfts</a>
-          </li>
+        ))}
         </ul>
       </div>
       <div>
         <p className="mb-2 mt-5 sm:mb-5 font-medium">Contact</p>
         <ul>
-          <li>
-            <a href="#">E-Mail</a>
+        {footerContact.map(item => (
+          <li key={item.id} className="hover:opacity-70 transition-opacity">
+            <a href={item.href}>{item.name}</a>
           </li>
-          <li>
-            <a href="#">Linked In</a>
-          </li>
-          <li>
-            <a href="#">Instagram</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
-          </li>
+        ))}
         </ul>
       </div>
       <div>

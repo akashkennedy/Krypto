@@ -1,6 +1,6 @@
 import BlurCircle from "../components/BlurCircle";
 import hamburger from "../assets/hamburger.png";
-import navLinks from "./data";
+import {navLinks} from "./data";
 
 const Header = ({ onClick }) => {
   return (
