@@ -1,7 +1,7 @@
 import BlurCircle from "../components/BlurCircle";
 import hamburger from "../assets/hamburger.png";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   return (
     <header className="flex items-center justify-between py-8">
       <h1 className="font-bold mt-3">Krypto</h1>
@@ -34,6 +34,7 @@ const Header = () => {
         src={hamburger}
         alt="Hamburger Menu"
         className="cursor-pointer sm:hidden"
+        onClick={onClick}
       />
     </header>
   );
