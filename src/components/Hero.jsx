@@ -2,9 +2,12 @@ import hero from "../assets/hero.png";
 import Button from "./Button";
 import BlurCircle from "./BlurCircle";
 
-const Hero = ({onClick}) => {
+const Hero = ({ onClick }) => {
   return (
-    <section className="sm:flex items-center justify-between gap-20">
+    <section
+      className="sm:flex items-center justify-between gap-20"
+      onClick={onClick}
+    >
       <div className="flex flex-col justify-between gap-y-5 w-60">
         <h1 className="text-5xl font-bold leading-normal">
           Discover and Collect rare NFTs
